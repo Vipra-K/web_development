@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+button{
+    padding: .8rem;
+    border: none;
+    font-weight: bolder;
+    border-radius: 2rem;
+    background: transparent;
+}
+/* nav start*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    display: inline;
+    margin-left: 2rem;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover{
+    border-bottom: 2px solid #dea03c;
+}
+.logo{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.logo:hover{
+    color: #dea03c;
+}
+nav button{
+    padding: .8rem .85rem;
+    margin-left: 1rem;
+    background-color: #fff;
+    border: none;
+    font-weight: bolder;
+    border-radius: 2rem;
+    cursor:pointer;
+}
+nav button:hover{
+    box-shadow: 2px 2px #dea03c ;
+    
+}
+nav button span{
+    color: grey;
+}
+/* nav end */
+
+/* Header start */
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+header h1{
+    font-family: Inter;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+.main-content p{
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+.main-bottom{
+    display:flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+/* .main-bottom button{
+    color:#dea03c;
+    border: 2px solid #dea03c;
+    margin-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+} */
+ .main-bottom img{
+    width: 217.6px;
+    height: 88.26px;
+    margin-right: 5rem;
+    cursor: pointer;
+    
+ }
+header img{
+    width: 600px;
+    height: auto;
+}
+/* Header end */
+
+
+/* Section project start */
+.projects{
+    height: 100vh;
+    margin-top: 5rem;
+    display: grid;
+    row-gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper img{
+    width:450px;
+    height: 350px;
+    cursor: pointer;
+    
+}
+.wrapper h1{
+    background-color: #fff;
+    position:absolute;
+    bottom: 1rem;
+    width: 280px;
+    color: #000;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+#art{
+    margin-left: .5rem;
+}
+/* java section */
+
+.java{
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.java-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width:40%;
+}
+.java h1{
+    font-family: Inter;
+    font-size: 3.5rem;
+    font-weight:normal;
+}
+.java p{
+    margin: 2rem 0;;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 2.5rem;
+}
+.java img{
+    width: 600px;
+    height: auto;
+    cursor: pointer;
+}
+.java button{
+    background-color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.java button:hover{
+    background-color: #dea03c;
+    transition: .2s ease;
+}

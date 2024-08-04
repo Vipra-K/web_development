@@ -1,0 +1,224 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #313132;
+    color: white;
+    padding: 0;
+    overflow: hidden; /* To hide scrollbars during animation */
+}
+/* nav start */
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    z-index:1;
+}
+.logo{
+    font-size: 2em;
+}
+nav li{
+    display: inline-block;
+    margin-left: 3rem;
+    font-weight: bold;
+}
+nav img{
+    width: 2.5rem;
+    margin-left: 1rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* nav end */
+
+/* bg img start */
+.container{
+    z-index: -9999;
+    opacity: 0;
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.099);
+    padding-top: 5rem;
+    padding-bottom: .5rem;
+    bottom: 0px;
+    width: 100%;
+    transform: translateY(200px);
+    transition: opacity 3s ease, transform 3s ease;
+}
+.container img{
+    width:100%;
+    overflow: auto;
+    height: 35vh;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 3s ease, transform 3s ease;
+}
+/* bg img end */
+
+/* progress bar start */
+.progress-container {
+    position: absolute;
+    font-size: 10px;
+    top:30%;
+    width: 300px;
+    height: 100px;
+    right:2%;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 4s ease, transform 3s ease;
+}
+
+.progress-bar-wrapper {
+    margin: .5rem 0;
+    width: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    height: .8rem;
+    border: 1px solid #494949;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #FF7A00;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+/* progress bar end */
+
+/* description img align */
+#description-img{
+    width: 200px;
+    position: absolute;
+    top: 55%;
+    right:9%;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 4s ease, transform 3s ease;
+}
+
+header{
+    margin: 6rem 2rem;
+}
+.down-animation{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 4s ease, transform 3s ease;
+}
+/* header start */
+header h1,h2{
+    font-size: 7rem;
+    font-weight:bolder;
+    text-align: left;
+    opacity: 90%;
+}
+#main-title1{
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: opacity 4s ease, transform 3s ease;
+}
+header h2{
+    color: #FF7A00;
+    font-weight:bolder;
+    
+}
+header h2 span{
+    -webkit-text-stroke: 3px #FF7A00;
+    color: transparent;
+}
+header p{
+    margin-top: 1rem;
+    font-size: .8rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+header button{
+    margin: 1.5rem 0;
+    padding: 1rem 4rem;
+    border: none;
+    background-color: #FF7A00;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius:25px;
+}
+
+#drink1{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width:450px;
+    z-index: -1;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity .2s ease-out, transform 1.5s ease-out;
+}
+#drink2{
+    position: absolute;
+    bottom: 0;
+    width:400px;
+    left: 40%;
+    z-index: -2;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease, transform 2.5s ease-out;
+}
+.social-links{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 4s ease, transform 3s ease;
+}
+.social-links ul{
+    position: absolute;
+    left:3rem;
+    bottom:2rem;
+    list-style: none;
+    display: flex;
+    width:300px;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-links img{
+    width:2rem;
+}
+/* hero end */
+
+@media screen and (max-width:1250px){
+    .progress-container{
+        display: none;
+    }
+    #description-img{
+        display: none;
+    }
+
+}
+@media screen and (max-width:950px){
+    #drink1
+    {
+        left: 20%;
+        width: 400px;
+    }
+    #drink2{
+        left: 30%;
+        width: 350px;
+    }
+
+}
